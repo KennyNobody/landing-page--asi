@@ -1,0 +1,53 @@
+.item-grid {
+	background-color: green;
+	position: relative;
+	&--1 {
+		grid-area: item-1;
+	}
+	&--2 {
+		grid-area: item-2;
+		height: rem(400);
+	}
+	&--3 {
+		grid-area: item-3;
+		height: rem(400);
+	}
+	&__picture {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	&__img {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__content {
+		background: linear-gradient(180deg, rgba(44, 44, 44, 0.15) 0%, rgba(44, 44, 44, 0.65) 100%);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: rem(27) rem(39);
+	}
+	&__title {
+		margin-bottom: rem(14);
+		font-weight: 600;
+		font-size: rem(40);
+		line-height: 1.2;
+	}
+	&__text {
+		p {
+			margin-bottom: 1rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

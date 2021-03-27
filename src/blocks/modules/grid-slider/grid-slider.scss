@@ -1,0 +1,49 @@
+.grid-slider {
+	display: block;
+	height: rem(700);
+	// overflow-x: hidden;
+	// overflow-y: visible;
+	&__container {
+		overflow: visible;
+	}
+	&__wrapper {
+
+	}
+	&__toolbar {
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: rem(30);
+	}
+	&__nav-btn {
+		background: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: rem(10);
+		margin-right: rem(24);
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+		&--disabled {
+			opacity: 0.4;
+			pointer-events: none;
+		}
+	}
+	&__nav-icon {
+		display: block;
+		width: rem(28);
+		height: rem(18);
+	}
+	&__slide {
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.3s all;
+		&--active {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}

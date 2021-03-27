@@ -1,0 +1,95 @@
+.card-person {
+	width: calc(100% / 12 * 4 - 30px);
+	padding-top: rem(95);
+	margin-bottom: rem(23);
+	display: grid;
+	grid-template-columns: 218px auto;
+	grid-template-rows: 218px auto;
+	gap: 32px 23px;
+	grid-template-areas:
+	"thumb content"
+	"discript discript";
+	@include r(1800) {
+		padding-top: 0;
+		grid-template-areas:
+		"thumb content"
+		"thumb discript";
+		width: auto;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		gap: 0px 23px;
+		margin-bottom: rem(68);
+	}
+	@include r(1200) {
+		display: block;
+	}
+	&__thumb {
+		grid-area: thumb;
+		flex-shrink: 0;
+		margin-right: rem(32);
+		display: flex;
+		width: rem(218);
+		height: rem(218);
+		flex-direction: column;
+		justify-content: flex-end;
+		border-radius: rem(150);
+		@include r(1200) {
+			margin-bottom: rem(24);
+		}
+	}
+	&__status {
+		color: $light;
+		text-transform: uppercase;
+		background-color: $blue;
+		text-align: center;
+		padding: rem(6);
+		font-weight: 500;
+	}
+	&__img {
+
+	}
+	&__content {
+		grid-area: content;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__discript {
+		grid-area: discript;
+		width: 100%;
+	}
+	&__name {
+		font-size: rem(20);
+		font-weight: 600;
+		margin-bottom: rem(19);
+		@include r(1800) {
+			margin-bottom: rem(8);
+			font-size: rem(30);
+			br {
+				display: none;
+			}
+		}
+		@include r(1200) {
+			margin-bottom: rem(12);
+			br {
+				display: block;
+			}
+		}
+	}
+	&__info {
+		color: $blue;
+		margin-bottom: rem(8);
+		display: block;
+		@include r(1800) {
+			margin-bottom: rem(4);
+		}
+		@include r(1200) {
+			margin-bottom: rem(12);
+		}
+	}
+	a.card-person__info {
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}

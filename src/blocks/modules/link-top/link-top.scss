@@ -1,0 +1,22 @@
+.link-top {
+	display: flex;
+	justify-content: flex-end;
+	padding: rem(6);
+	&__btn {
+		background-color: inherit;
+		align-items: center;
+		display: flex;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__icon {
+		display: flex;
+		width: rem(9);
+		height: rem(27);
+		margin-right: rem(15);
+	}
+	&__text {
+		color: $blue;
+	}
+}

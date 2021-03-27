@@ -1,0 +1,41 @@
+.item-progress {
+	width: 20%;
+	margin-bottom: rem(35);
+	&__time {
+		display: block;
+		margin-bottom: rem(14);
+		font-size: rem(40);
+		line-height: 1.1;
+		&:last-of-type {
+			margin-bottom: rem(50);
+		}
+		b {
+			font-weight: 700;
+			font-size: rem(60);
+		}
+	}
+	&__toolbar {
+		border-bottom: 1px solid $blue;
+		margin-bottom: rem(70);
+	}
+	&__tag {
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 500;
+		padding: rem(10) rem(34);
+		border-top: 1px solid $blue;
+		border-left: 1px solid $blue;
+		border-right: 1px solid $blue;
+	}
+	&__list {
+		display: block;
+		list-style-type: none;
+		padding-right: rem(100);
+	}
+	&__item {
+		margin-bottom: 1rem;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}

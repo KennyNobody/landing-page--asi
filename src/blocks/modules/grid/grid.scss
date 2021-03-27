@@ -1,0 +1,9 @@
+.grid {
+	display: grid;
+	grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: rem(30) rem(30);
+	grid-template-areas:
+	"item-1 item-2 item-2 item-2 item-2 item-2 item-2 item-2"
+	"item-1 item-3 item-3 item-3 item-3 item-3 item-3 item-3";
+}

@@ -1,0 +1,67 @@
+.section {
+	&--head {
+		overflow: hidden;
+		background-color: $dark;
+		background-position: center;
+		background: no-repeat;
+		background-size: cover;
+	}
+	&--footer {
+		background-color: $dark;
+		color: $light;
+		padding-top: rem(26);
+		padding-bottom: rem(26);
+	}
+	&--padding-top {
+		padding-top: rem(80);
+	}
+	&--padding-bottom-l {
+		padding-bottom: rem(220);
+	}
+	&--light {
+		
+	}
+	&--dark {
+		color: $light;
+	}
+	&--gradient {
+		background: $gradient;
+	}
+	&--decor-1 {
+		background-image: url('../img/decor-circle-1.svg');
+		background-repeat: no-repeat;
+		background-size: 650px 650px;
+		background-position: calc((100vw - 1800px)/2) -210px;
+	}
+	&--decor-2 {
+		background-image: url('../img/decor-circle-3.svg'), $gradient;
+		background-repeat: no-repeat;
+		background-size: 680px 680px, 100% 100%;
+		background-position: right calc((100vw - 1900px)/2) top 220px, center;
+	}
+	&--decor-3 {
+		background-image: url('../img/decor-circle-1.svg'), url('../img/decor-circle-2.svg');
+		background-repeat: no-repeat;
+		background-size: 650px 650px, 682px 682px;
+		background-position: right calc((100vw - 1900px)/2) top 57px, left calc((100vw - 1400px)/2) bottom 716px;
+	}
+	&--decor-4 {
+		background-image: url('../img/decor-circle-3.svg'), $gradient;
+		background-repeat: no-repeat;
+		background-size: 680px 680px, 100% 100%;
+		background-position: right calc((100vw - 1900px)/2) top 260px, center;
+	}
+	&--decor-5 {
+		background-image: url('../img/decor-circle-1.svg');
+		background-repeat: no-repeat;
+		background-size: 650px 650px;
+		background-position: left calc((100vw - 1700px)/2) bottom -100px;
+	}
+	&--bottom {
+		padding-top: rem(364);
+		padding-bottom: rem(55);
+	}
+	&--progress {
+		padding-top: rem(120);
+	}
+}

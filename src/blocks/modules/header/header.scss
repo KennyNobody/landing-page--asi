@@ -1,0 +1,37 @@
+.header {
+	padding-top: rem(25);
+	padding-bottom: rem(25);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: rem(80);
+	&__logo {
+		display: block;
+	}
+	&__logo-img {
+		display: block;
+		width: rem(192);
+		height: rem(62);
+		@include r(1800) {
+			width: rem(120);
+			height: rem(40);
+		}
+	}
+	&__burger {
+		display: block;
+		padding: rem(6);
+		display: none;
+		visibility: hidden;
+		background: none;
+		@include r(1200) {
+			display: block;
+			visibility: visible;
+		}
+	}
+	&__burger-icon {
+		display: block;
+		width: rem(24);
+		height: rem(24);
+		fill: $light;
+	}
+}

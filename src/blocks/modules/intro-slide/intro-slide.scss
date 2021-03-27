@@ -1,0 +1,57 @@
+.intro-slide {
+	background: linear-gradient(208.84deg, #3366CC 22.46%, #00C7BB 100%);
+	border-radius: rem(30);
+	display: block;
+	padding: rem(21) rem(11);
+	text-align: center;
+	transition: 0.3s all;
+	&__header {
+		color: $light;
+		text-transform: uppercase;
+		font-size: rem(20);
+		font-weight: 500;
+		min-height: rem(80);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include r(1800) {
+			font-size: rem(16);
+		}
+	}
+	&__main {
+		color: #174298;
+		line-height: 1.0;
+		margin-bottom: rem(24);
+	}
+	&__count {
+		font-size: rem(90);
+		font-weight: 900;
+		@include r(1200) {
+			font-size: rem(72);
+		}
+	}
+	&__discript {
+		font-size: rem(30);
+		font-weight: 600;
+		@include r(1200) {
+			font-size: rem(24);
+		}
+	}
+	&__footer {
+
+	}
+	&__btn {
+		width: rem(204);
+		height: rem(38);
+		color: $blue;
+		background-color: $light;
+		font-family: inherit;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-weight: 500;
+	}
+}

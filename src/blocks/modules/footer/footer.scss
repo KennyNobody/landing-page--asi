@@ -1,0 +1,17 @@
+.footer {
+	display: flex;
+	align-items: center;
+	&__logo {
+		display: block;
+		margin-right: rem(90);
+		padding-top: rem(26);
+		padding-bottom: rem(26);
+	}
+	&__logo-img {
+		width: rem(192);
+		height: rem(62);
+	}
+	&__content {
+		align-self: flex-end;
+	}
+}
