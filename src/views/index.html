@@ -30,7 +30,7 @@
 </head>
 <body class="body">
     <div class="page">
-        <header class="section section--head" style="background-image: url('img/intro-bg.jpg');">
+        <header class="section section--head" style="background-image: url('img/intro-bg.jpg');" id="section-0">
             <div class="container container--intro">
                 @@include("../blocks/modules/header/header.html")
                 <div class="intro-content">
@@ -40,7 +40,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="section section--light section--decor-1">
+            <section class="section section--light section--decor-1 section--padding-bottom-l" id="section-1">
                 <div class="container container--wrap">
                     <div class="about">
                         <div class="about__thumb" style="background-image: url('img/img-type-1.png');">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section--dark section--gradient section--padding-bottom-l section--decor-2">
+            <section class="section section--dark section--gradient section--padding-bottom-l section--decor-2" id="section-2">
                 <div class="container container--wrap">
                     <div class="about">
                         <div class="about__thumb" style="background-image: url('img/img-type-2.png');">
@@ -163,7 +163,7 @@
                 </div>
             </section>
             <section class="section section--light section--decor-3">
-                <div class="container container--wrap">
+                <div class="container container--wrap" id="section-3">
                     <div class="about">
                         <div class="about__thumb" style="background-image: url('img/img-type-3.png');">
                             <span class="about__number">
@@ -222,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container container--wrap">
+                <div class="container container--wrap" id="section-4">
                     <div class="about">
                         <div class="about__thumb" style="background-image: url('img/img-type-4.png');">
                             <span class="about__number">
@@ -637,7 +637,7 @@
             </section>
             <section class="section section--light section--bottom section--decor-5">
                 <div class="container">
-                    <div class="title">
+                    <div class="title" id="section-5">
                         <h2 class="title__text">
                             Новости
                         </h2>
@@ -659,7 +659,7 @@
             </div>
         </footer>
     </div>
-
+    @@include("../blocks/modules/mob-menu/mob-menu.html")
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>

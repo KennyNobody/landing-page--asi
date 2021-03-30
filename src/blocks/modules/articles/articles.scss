@@ -1,6 +1,7 @@
 .articles {
 	width: 100%;
-	padding-bottom: rem(115);
+	// padding-bottom: rem(115);
+	margin-bottom: rem(100);
 	@include r(1200) {
 		padding-bottom: 0;
 		margin-bottom: rem(120);

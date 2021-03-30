@@ -30,7 +30,7 @@
 </head>
 <body class="body">
     <div class="page">
-        <header class="section section--head" style="background-image: url('img/intro-bg.jpg');">
+        <header class="section section--head" style="background-image: url('img/intro-bg.jpg');" id="section-0">
             <div class="container container--intro">
                 <div class="header">
 	<a href="/" class="header__logo">
@@ -40,22 +40,22 @@
 		<p class="nav__title">
 			Направления
 		</p>
-		<a href="#section-city" class="nav__link-section">
+		<a href="#section-1" class="nav__link-section">
 			Город
 		</a>
-		<a href="#section-technology" class="nav__link-section">
+		<a href="#section-2" class="nav__link-section">
 			Технологии
 		</a>
-		<a href="#section-education" class="nav__link-section">
+		<a href="#section-3" class="nav__link-section">
 			Образование
 		</a>
-		<a href="#section-society" class="nav__link-section nav__link-section--last">
+		<a href="#section-4" class="nav__link-section nav__link-section--last">
 			Социум
 		</a>
-		<a href="" class="nav__link">
+		<a href="#section-5" class="nav__link">
 			Новости
 		</a>
-		<a href="" class="nav__link">
+		<a href="#section-6" class="nav__link">
 			Контакты
 		</a>
 	</nav>
@@ -181,7 +181,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="section section--light section--decor-1">
+            <section class="section section--light section--decor-1 section--padding-bottom-l" id="section-1">
                 <div class="container container--wrap">
                     <div class="about">
                         <div class="about__thumb" style="background-image: url('img/img-type-1.png');">
@@ -371,7 +371,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section--dark section--gradient section--padding-bottom-l section--decor-2">
+            <section class="section section--dark section--gradient section--padding-bottom-l section--decor-2" id="section-2">
                 <div class="container container--wrap">
                     <div class="about">
                         <div class="about__thumb" style="background-image: url('img/img-type-2.png');">
@@ -560,7 +560,7 @@
                 </div>
             </section>
             <section class="section section--light section--decor-3">
-                <div class="container container--wrap">
+                <div class="container container--wrap" id="section-3">
                     <div class="about">
                         <div class="about__thumb" style="background-image: url('img/img-type-3.png');">
                             <span class="about__number">
@@ -747,7 +747,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container container--wrap">
+                <div class="container container--wrap" id="section-4">
                     <div class="about">
                         <div class="about__thumb" style="background-image: url('img/img-type-4.png');">
                             <span class="about__number">
@@ -1290,7 +1290,7 @@
             </section>
             <section class="section section--light section--bottom section--decor-5">
                 <div class="container">
-                    <div class="title">
+                    <div class="title" id="section-5">
                         <h2 class="title__text">
                             Новости
                         </h2>
@@ -1357,14 +1357,14 @@
                         </div>
                     </div>
                     <div class="link-top">
-	<button class="link-top__btn">
+	<a href="#section-0" class="link-top__btn">
 		<svg class="link-top__icon">
 			<use xlink:href="/img/sprites/sprite.svg#icon-arrow-top"></use>
 		</svg>
 		<span class="link-top__text">
 			Наверх
 		</span>
-	</button>
+	</a>
 </div>
                 </div>
             </section>
@@ -1407,7 +1407,37 @@
             </div>
         </footer>
     </div>
-
+    <div class="mob-menu">
+	<div class="mob-menu__content">
+		<div class="mob-menu__header">
+			
+		</div>
+		<div class="mob-menu__main">
+			<a href="#section-1" class="mob-menu__link">
+				Город
+			</a>
+			<a href="#section-2" class="mob-menu__link">
+				Технологии
+			</a>
+			<a href="#section-3" class="mob-menu__link">
+				Образование
+			</a>
+			<a href="#section-4" class="mob-menu__link">
+				Социум
+			</a>
+			<a href="#section-5" class="mob-menu__link">
+				Новости
+			</a>
+			<a href="#section-6" class="mob-menu__link">
+				Контакты
+			</a>
+		</div>
+		<div class="mob-menu__footer">
+			
+		</div>
+		
+	</div>
+</div>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>

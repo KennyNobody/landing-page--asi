@@ -227,6 +227,45 @@ var slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.intro-slider__
 
 /***/ }),
 
+/***/ "./src/blocks/modules/mob-menu/mob-menu.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/modules/mob-menu/mob-menu.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function toggleMenu() {
+  var button = document.querySelector('.header__burger');
+  var body = document.querySelector('.body');
+  var menu = document.querySelector('.mob-menu');
+  var opened = false;
+  button.addEventListener('click', function () {
+    if (opened == false) {
+      open();
+    } else {
+      close();
+    }
+  });
+
+  function open() {
+    body.classList.add('body--opened');
+    menu.classList.add('mob-menu--open');
+    opened = true;
+  }
+
+  function close() {
+    body.classList.remove('body--opened');
+    menu.classList.remove('mob-menu--open');
+    opened = false;
+  }
+
+  menu.addEventListener('click', function () {
+    close();
+  });
+})();
+
+/***/ }),
+
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -242,6 +281,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_intro_slider_intro_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/intro-slider/intro-slider */ "./src/blocks/modules/intro-slider/intro-slider.js");
 /* harmony import */ var _modules_grid_slider_grid_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/grid-slider/grid-slider */ "./src/blocks/modules/grid-slider/grid-slider.js");
+/* harmony import */ var _modules_mob_menu_mob_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/mob-menu/mob-menu */ "./src/blocks/modules/mob-menu/mob-menu.js");
+/* harmony import */ var _modules_mob_menu_mob_menu__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_mob_menu_mob_menu__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 

@@ -4,4 +4,11 @@
 	line-height: 1.3;
 	font-weight: 400;
 	overflow-x: hidden;
+	&--opened {
+		overflow: hidden;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
 }
