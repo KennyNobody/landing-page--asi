@@ -12,6 +12,9 @@
 	}
 	& + .container {
 		margin-top: rem(115);
+		@include r(1200) {
+			margin-top: rem(60);
+		}
 	}
 	&--wrap {
 		flex-wrap: wrap;

@@ -1,10 +1,10 @@
 .nav {
 	display: flex;
 	align-items: center;
+	@include r(1200) {
+		display: none;
+	}
 	&--header {
-		@include r(1200) {
-			display: none;
-		}
 		.nav__link-section {
 			border-right: 1px solid $blue;
 			&--last {

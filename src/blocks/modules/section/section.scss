@@ -5,6 +5,7 @@
 		background-position: center;
 		background: no-repeat;
 		background-size: cover;
+		color: $light;
 	}
 	&--footer {
 		background-color: $dark;
@@ -17,12 +18,20 @@
 	}
 	&--padding-bottom-l {
 		padding-bottom: rem(220);
+		
 	}
 	&--light {
-		
+		@include r(1200) {
+			padding-top: rem(90);
+			padding-bottom: rem(90);
+		}
 	}
 	&--dark {
 		color: $light;
+		@include r(1200) {
+			padding-top: rem(90);
+			padding-bottom: rem(90);
+		}
 	}
 	&--gradient {
 		background: $gradient;

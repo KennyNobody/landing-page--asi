@@ -816,6 +816,8 @@ button.swiper-pagination-bullet {
   justify-content: space-between;
 }
 
+/**/
+
 .container {
   width: 100%;
   max-width: 120rem;
@@ -937,6 +939,8 @@ button.swiper-pagination-bullet {
   fill: #ffffff;
 }
 
+/**/
+
 .footer {
   display: flex;
   align-items: center;
@@ -958,12 +962,27 @@ button.swiper-pagination-bullet {
   align-self: flex-end;
 }
 
+.footer__discript a {
+  display: inline-block;
+}
+
+.footer__author-img {
+  height: 1.125rem;
+  width: auto;
+  position: relative;
+  top: 0.0625rem;
+  margin-top: 0.625rem;
+}
+
+/**/
+
 .section--head {
   overflow: hidden;
   background-color: #132447;
   background-position: center;
   background: no-repeat;
   background-size: cover;
+  color: #ffffff;
 }
 
 .section--footer {
@@ -1033,6 +1052,8 @@ button.swiper-pagination-bullet {
   padding-top: 7.5rem;
 }
 
+/**/
+
 .articles {
   width: 100%;
   padding-bottom: 7.1875rem;
@@ -1080,6 +1101,8 @@ button.swiper-pagination-bullet {
   display: flex;
   justify-content: center;
 }
+
+/**/
 
 .title {
   position: relative;
@@ -1203,6 +1226,8 @@ button.swiper-pagination-bullet {
   height: 100%;
   width: 100%;
 }
+
+/**/
 
 .grid-slider {
   display: block;
@@ -1373,15 +1398,21 @@ button.swiper-pagination-bullet {
   opacity: 0.7;
 }
 
+/**/
+
 .item-person {
   text-align: center;
 }
 
 .item-person__thumb {
   overflow: hidden;
-  border-radius: 9.375rem;
+  border-radius: 21.875rem;
   display: block;
   margin-bottom: 1rem;
+  max-width: 17.5rem;
+  max-height: 17.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item-person__img {
@@ -1403,6 +1434,8 @@ button.swiper-pagination-bullet {
 .item-person__link:hover {
   opacity: 0.7;
 }
+
+/**/
 
 .item-article {
   display: block;
@@ -1458,8 +1491,9 @@ button.swiper-pagination-bullet {
   line-height: 1.2;
 }
 
+/**/
+
 .item-grid {
-  background-color: green;
   position: relative;
 }
 
@@ -1524,6 +1558,10 @@ button.swiper-pagination-bullet {
   margin-bottom: 2.1875rem;
 }
 
+.item-progress:last-of-type .item-progress__toolbar {
+  width: fit-content;
+}
+
 .item-progress__time {
   display: block;
   margin-bottom: 0.875rem;
@@ -1569,6 +1607,8 @@ button.swiper-pagination-bullet {
   margin-bottom: 0;
 }
 
+/**/
+
 .grid {
   display: grid;
   grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1576,6 +1616,8 @@ button.swiper-pagination-bullet {
   gap: 1.875rem 1.875rem;
   grid-template-areas: "item-1 item-2 item-2 item-2 item-2 item-2 item-2 item-2" "item-1 item-3 item-3 item-3 item-3 item-3 item-3 item-3";
 }
+
+/**/
 
 .about {
   display: flex;
@@ -1728,6 +1770,15 @@ button.swiper-pagination-bullet {
     height: 2.5rem;
   }
 
+  .articles__content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .articles__content + .articles__toolbar {
+    margin-top: 1.875rem;
+  }
+
   .articles__item {
     width: 25%;
   }
@@ -1768,6 +1819,23 @@ button.swiper-pagination-bullet {
     margin-bottom: 0.25rem;
   }
 
+  .item-article__picture {
+    height: 16.25rem;
+  }
+
+  .item-progress {
+    width: calc(100% / 3);
+  }
+
+  .item-progress__time {
+    font-size: 2.125rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .item-progress__list {
+    padding-right: 2.5rem;
+  }
+
   .about {
     width: 100%;
     padding-bottom: 0rem;
@@ -1789,6 +1857,10 @@ button.swiper-pagination-bullet {
 }
 
 @media only screen and (max-width: 1200px) {
+  .container + .container {
+    margin-top: 3.75rem;
+  }
+
   .container--intro {
     min-height: 0;
     padding-bottom: 11.25rem;
@@ -1835,6 +1907,52 @@ button.swiper-pagination-bullet {
     visibility: visible;
   }
 
+  .footer {
+    display: block;
+  }
+
+  .footer__logo {
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .footer__content {
+    text-align: center;
+  }
+
+  .section--light {
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem;
+  }
+
+  .section--dark {
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem;
+  }
+
+  .articles {
+    padding-bottom: 0;
+    margin-bottom: 7.5rem;
+  }
+
+  .articles:last-child {
+    margin-bottom: 0rem;
+  }
+
+  .articles__content--between {
+    display: block;
+  }
+
+  .title:after {
+    font-size: 1.875rem;
+    display: none;
+  }
+
+  .title__text {
+    font-size: 1.875rem;
+  }
+
   .intro-content {
     display: flex;
     flex-direction: column;
@@ -1861,6 +1979,14 @@ button.swiper-pagination-bullet {
   .intro-slider {
     padding-left: 0;
     margin-bottom: 0;
+  }
+
+  .grid-slider {
+    height: auto;
+  }
+
+  .grid-slider__toolbar {
+    margin-bottom: 1.25rem;
   }
 
   .intro-slide__count {
@@ -1891,14 +2017,114 @@ button.swiper-pagination-bullet {
     margin-bottom: 0.75rem;
   }
 
-  .nav--header {
+  .item-article {
+    width: 100%;
+    margin-bottom: 3.75rem;
+  }
+
+  .item-article__picture {
+    display: block;
+    max-width: 36.25rem;
+    height: auto;
+    width: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .item-article__content {
+    padding: 0;
+  }
+
+  .item-article__content:before {
     display: none;
+  }
+
+  .item-article__date {
+    margin-bottom: 0.625rem;
+  }
+
+  .item-article__title {
+    font-size: 1.375rem;
+  }
+
+  .item-grid {
+    display: flex;
+    height: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .item-grid__picture {
+    display: none;
+  }
+
+  .item-grid__content {
+    padding: 1.375rem 1.75rem;
+    position: relative;
+    background: none;
+    background-color: #ffffff;
+    color: #132447;
+  }
+
+  .item-grid__title {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .about {
+    padding-top: 0;
+  }
+
+  .about__thumb {
+    display: none;
+  }
+
+  .btn {
+    padding: 0.75rem 1.875rem;
+    font-size: 1rem;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .articles__item {
+    padding: 0 0.75rem;
+    width: calc(100% / 3);
+  }
+
+  .item-progress {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .articles__item {
+    padding: 0 0.75rem;
+    width: 50%;
+  }
+
+  .item-progress:last-of-type .item-progress__toolbar {
+    width: auto;
+  }
+
+  .item-progress {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 560px) {
   .columns__column--2 {
     width: calc(100% / 12 * 6 - 10px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .articles__item {
+    width: 100%;
   }
 }
 

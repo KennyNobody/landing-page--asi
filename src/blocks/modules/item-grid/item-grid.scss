@@ -1,6 +1,10 @@
 .item-grid {
-	background-color: green;
 	position: relative;
+	@include r(1200) {
+		display: flex;
+		height: auto;
+		margin-bottom: rem(20);
+	}
 	&--1 {
 		grid-area: item-1;
 	}
@@ -16,6 +20,9 @@
 		display: block;
 		width: 100%;
 		height: 100%;
+		@include r(1200) {
+			display: none;
+		}
 	}
 	&__img {
 		position: relative;
@@ -35,12 +42,22 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		padding: rem(27) rem(39);
+		@include r(1200) {
+			padding: rem(22) rem(28);
+			position: relative;
+			background: none;
+			background-color: $light;
+			color: $dark;
+		}
 	}
 	&__title {
 		margin-bottom: rem(14);
 		font-weight: 600;
 		font-size: rem(40);
 		line-height: 1.2;
+		@include r(1200) {
+			font-size: rem(24);
+		}
 	}
 	&__text {
 		p {

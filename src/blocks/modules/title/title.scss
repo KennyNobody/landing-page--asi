@@ -10,11 +10,18 @@
 		width: 100%;
 		position: absolute;
 		bottom: 1.1rem;
+		@include r(1200) {
+			font-size: rem(30);
+			display: none;
+		}
 	}
 	&__text {
 		font-size: rem(60);
 		font-weight: 600;
 		position: relative;
 		z-index: 2;
+		@include r(1200) {
+			font-size: rem(30);
+		}
 	}
 }

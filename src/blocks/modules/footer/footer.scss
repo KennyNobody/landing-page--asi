@@ -1,11 +1,19 @@
 .footer {
 	display: flex;
 	align-items: center;
+	@include r(1200) {
+		display: block;
+	}
 	&__logo {
 		display: block;
 		margin-right: rem(90);
 		padding-top: rem(26);
 		padding-bottom: rem(26);
+		@include r(1200) {
+			margin-right: auto;
+			margin-left: auto;
+			width: fit-content;
+		}
 	}
 	&__logo-img {
 		width: rem(192);
@@ -13,5 +21,20 @@
 	}
 	&__content {
 		align-self: flex-end;
+		@include r(1200) {
+			text-align: center;
+		}
+	}
+	&__discript {
+		a {
+			display: inline-block;
+		}
+	}
+	&__author-img {
+		height: rem(18);
+		width: auto;
+		position: relative;
+		top: rem(1);
+		margin-top: rem(10);
 	}
 }

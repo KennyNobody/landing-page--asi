@@ -10,6 +10,9 @@
 		padding-bottom: rem(0);
 		margin-bottom: rem(60);
 	}
+	@include r(1200) {
+		padding-top: 0;
+	}
 	&__thumb {
 		flex-shrink: 0;
 		width: rem(432);
@@ -26,6 +29,9 @@
 		@include r(1800) {
 			width: rem(480);
 			height: rem(480);
+		}
+		@include r(1200) {
+			display: none;
 		}
 	}
 	&__number {
