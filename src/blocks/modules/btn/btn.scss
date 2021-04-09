@@ -6,6 +6,7 @@
 	text-transform: uppercase;
 	color: $blue;
 	font-weight: 500;
+	background: inherit;
 	@include r(1200) {
 		padding: rem(12) rem(30);
 		font-size: rem(16);

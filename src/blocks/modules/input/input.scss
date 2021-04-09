@@ -1,0 +1,35 @@
+.input {
+	display: block;
+	margin-bottom: rem(33);
+	&__title {
+		margin-bottom: rem(3);
+	}
+	&__field {
+		display: block;
+		border: none;
+		border-bottom: 2px solid #E0E0E0;
+		width: 100%;
+		padding: rem(5) rem(8);
+		outline: none;
+		font-family: $font-main;
+		font-weight: 500;
+		font-size: rem(16);
+		&:focus {
+			border-bottom: 2px solid $blue;
+		}
+	}
+	&__textarea {
+		display: block;
+		font-family: $font-main;
+		font-size: rem(16);
+		border: 2px solid #E0E0E0;
+		padding: rem(10);
+		min-height: rem(165);
+		resize: none;
+		width: 100%;
+		font-weight: 500;
+		&:focus {
+			border-radius: 2px solid $blue;
+		}
+	}
+}

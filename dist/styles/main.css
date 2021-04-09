@@ -2629,6 +2629,7 @@ html {
   text-transform: uppercase;
   color: #3366CC;
   font-weight: 500;
+  background: inherit;
 }
 
 .btn:hover {
@@ -2892,6 +2893,48 @@ span.breadcrumbs__link {
   background-color: #ffffff;
   max-width: 100%;
   width: 36.25rem;
+  display: none;
+}
+
+.input {
+  display: block;
+  margin-bottom: 2.0625rem;
+}
+
+.input__title {
+  margin-bottom: 0.1875rem;
+}
+
+.input__field {
+  display: block;
+  border: none;
+  border-bottom: 2px solid #E0E0E0;
+  width: 100%;
+  padding: 0.3125rem 0.5rem;
+  outline: none;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.input__field:focus {
+  border-bottom: 2px solid #3366CC;
+}
+
+.input__textarea {
+  display: block;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-size: 1rem;
+  border: 2px solid #E0E0E0;
+  padding: 0.625rem;
+  min-height: 10.3125rem;
+  resize: none;
+  width: 100%;
+  font-weight: 500;
+}
+
+.input__textarea:focus {
+  border-radius: 2px solid #3366CC;
 }
 
 @media only screen and (max-width: 1800px) {
