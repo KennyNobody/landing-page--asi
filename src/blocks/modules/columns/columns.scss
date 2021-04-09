@@ -11,6 +11,9 @@
 	&--align {
 		align-items: center;
 	}
+	&--contacts {
+		margin-bottom: rem(55);
+	}
 	&__column {
 		&--1 {
 			width: calc(100% / 12 - 10px);

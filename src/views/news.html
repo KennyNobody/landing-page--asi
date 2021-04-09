@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Новости</title>
+	@@include("../blocks/modules/head/head.html")
+</head>
+<body class="body">
+	<div class="page">
+		<header class="section section--head">
+			<div class="container">
+				<div class="header">
+					<a href="/" class="header__logo">
+						<img src="img/logo-dark.svg" class="header__logo-img" alt="АСИ">
+					</a>
+					<nav class="nav nav--header nav--dark">
+						<p class="nav__title">
+							Направления
+						</p>
+						<a href="#section-1" class="nav__link-section">
+							Город
+						</a>
+						<a href="#section-2" class="nav__link-section">
+							Технологии
+						</a>
+						<a href="#section-3" class="nav__link-section">
+							Образование
+						</a>
+						<a href="#section-4" class="nav__link-section nav__link-section--last">
+							Социум
+						</a>
+						<a href="#section-5" class="nav__link">
+							Новости
+						</a>
+						<a href="#section-6" class="nav__link">
+							Контакты
+						</a>
+					</nav>
+					<button class="header__burger">
+						<svg class="header__burger-icon header__burger-icon--dark">
+							<use xlink:href="/img/sprites/sprite.svg#icon-menu"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section section--breadcrumbs">
+				<div class="container">
+					@@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+				</div>
+			</section>
+			<section class="section section--decor-news">
+				<div class="container">
+					<div class="title" id="section-5">
+						<h2 class="title__text">
+							Новости
+						</h2>
+					</div>
+					<div class="articles articles--news">
+						<div class="articles__content articles__content--between">
+							@@include("../blocks/modules/item-article/item-article.html")
+							@@include("../blocks/modules/item-article/item-article.html")
+							@@include("../blocks/modules/item-article/item-article.html")
+							@@include("../blocks/modules/item-article/item-article.html")
+							@@include("../blocks/modules/item-article/item-article.html")
+							@@include("../blocks/modules/item-article/item-article.html")
+							@@include("../blocks/modules/item-article/item-article.html")
+							<div class="item-article item-article--clear"></div>
+							<div class="item-article item-article--clear"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--bottom">
+				<div class="container">
+					<div class="link-top">
+						<a href="#section-0" class="link-top__btn">
+							<svg class="link-top__icon-top">
+								<use xlink:href="/img/sprites/sprite.svg#icon-arrow-top"></use>
+							</svg>
+							<span class="link-top__text">
+								Наверх
+							</span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="section section--footer">
+			<div class="container">
+				@@include("../blocks/modules/footer/footer.html")
+			</div>
+		</footer>
+	</div>
+	@@include("../blocks/modules/mob-menu/mob-menu.html")
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
+</body>
+</html>

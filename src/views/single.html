@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Одиночная запись</title>
+	@@include("../blocks/modules/head/head.html")
+</head>
+<body class="body">
+	<div class="page">
+		<header class="section section--head">
+			<div class="container">
+				<div class="header">
+					<a href="/" class="header__logo">
+						<img src="img/logo-dark.svg" class="header__logo-img" alt="АСИ">
+					</a>
+					<nav class="nav nav--header nav--dark">
+						<p class="nav__title">
+							Направления
+						</p>
+						<a href="#section-1" class="nav__link-section">
+							Город
+						</a>
+						<a href="#section-2" class="nav__link-section">
+							Технологии
+						</a>
+						<a href="#section-3" class="nav__link-section">
+							Образование
+						</a>
+						<a href="#section-4" class="nav__link-section nav__link-section--last">
+							Социум
+						</a>
+						<a href="#section-5" class="nav__link">
+							Новости
+						</a>
+						<a href="#section-6" class="nav__link">
+							Контакты
+						</a>
+					</nav>
+					<button class="header__burger">
+						<svg class="header__burger-icon header__burger-icon--dark">
+							<use xlink:href="/img/sprites/sprite.svg#icon-menu"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section section--breadcrumbs">
+				<div class="container">
+					@@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+				</div>
+			</section>
+			<section class="section section--single section--decor-news">
+				<div class="container">
+					<div class="columns">
+						<div class="columns__column columns__column--8">
+							@@include("../blocks/modules/preview/preview.html")
+							<div class="editor editor--single">
+								<h1>
+									Заголовок h1
+								</h1>
+								<h2>
+									Заголовок h2
+								</h2>
+								<h3>
+									Заголовок h3
+								</h3>
+								<h4>
+									Заголовок h4
+								</h4>
+								<h5>
+									Заголовок h5
+								</h5>
+								<h6>
+									Заголовок h5
+								</h6>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis veritatis eligendi ex dolore magnam reiciendis veniam. Aut officiis blanditiis sequi, magnam, cupiditate asperiores mollitia aliquid ad, nihil impedit ratione dicta!
+								</p>
+								<blockquote>
+									Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Et rem eaque, porro quisquam itaque repudiandae. Necessitatibus aperiam, quos ea odio numquam nisi, quae at inventore culpa optio architecto nemo, alias!
+								</blockquote>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Nam, nobis? Vero aperiam quaerat nemo iste, nam eius ab suscipit corrupti minus aut repellendus, odio distinctio iure. Asperiores enim, tempore sit.
+								</p>
+								<img src="img/preview.png" alt="">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing, elit. Harum autem illo architecto, quia nam unde delectus pariatur praesentium asperiores voluptatum sapiente nesciunt maxime quam ipsum, sint accusantium officiis eligendi aliquid.
+								</p>
+							</div>
+						</div>
+						<div class="columns__column columns__column--4">
+							<sidebar class="sidebar">
+								<p class="sidebar__title">
+									Другие темы
+								</p>
+								<div class="sidebar__articles">
+									<a href="single.html" class="item-article item-article--side">
+										<picture class="item-article__picture">
+											<img src="https://via.placeholder.com/588x400" alt="Название новости">
+										</picture>
+										<div class="item-article__content">
+											<time class="item-article__date">
+												21 марта 2021
+											</time>
+											<h3 class="item-article__title">
+												Прошло заседание экспертов
+											</h3>
+											<div class="item-article__text">
+												<p>
+													Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="single.html" class="item-article item-article--side">
+										<picture class="item-article__picture">
+											<img src="https://via.placeholder.com/588x400" alt="Название новости">
+										</picture>
+										<div class="item-article__content">
+											<time class="item-article__date">
+												21 марта 2021
+											</time>
+											<h3 class="item-article__title">
+												Прошло заседание экспертов
+											</h3>
+											<div class="item-article__text">
+												<p>
+													Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="single.html" class="item-article item-article--side">
+										<picture class="item-article__picture">
+											<img src="https://via.placeholder.com/588x400" alt="Название новости">
+										</picture>
+										<div class="item-article__content">
+											<time class="item-article__date">
+												21 марта 2021
+											</time>
+											<h3 class="item-article__title">
+												Прошло заседание экспертов
+											</h3>
+											<div class="item-article__text">
+												<p>
+													Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</sidebar>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			<section class="section section--bottom">
+				<div class="container">
+					<div class="link-top link-top--single">
+						<a href="news.html" class="link-top__btn">
+							<svg class="link-top__icon-back">
+								<use xlink:href="/img/sprites/sprite.svg#icon-arrow-back"></use>
+							</svg>
+							<span class="link-top__text">
+								Назад
+							</span>
+						</a>
+						<a href="#section-0" class="link-top__btn">
+							<svg class="link-top__icon-top">
+								<use xlink:href="/img/sprites/sprite.svg#icon-arrow-top"></use>
+							</svg>
+							<span class="link-top__text">
+								Наверх
+							</span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="section section--footer">
+			<div class="container">
+				@@include("../blocks/modules/footer/footer.html")
+			</div>
+		</footer>
+	</div>
+	@@include("../blocks/modules/mob-menu/mob-menu.html")
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
+</body>
+</html>

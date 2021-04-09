@@ -4,7 +4,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: rem(80);
+	&--front {
+		margin-bottom: rem(80);
+	}
 	&__logo {
 		display: block;
 	}
@@ -33,5 +35,8 @@
 		width: rem(24);
 		height: rem(24);
 		fill: $light;
+		&--dark {
+			fill: $dark;
+		}
 	}
 }

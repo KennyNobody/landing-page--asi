@@ -1,0 +1,29 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	&__icon {
+		display: block;
+		width: rem(16);
+		height: rem(16);
+		margin-left: rem(4);
+		margin-right: rem(4);
+		flex-shrink: 0;
+	}
+	&__link {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}
+
+a.breadcrumbs__link {
+	color: $blue;
+	flex-shrink: 0;
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+span.breadcrumbs__link {
+	color: #BDBDBD;
+}

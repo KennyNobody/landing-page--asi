@@ -1,666 +1,673 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>АСИ</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.css">
+	<title>АСИ</title>
+	@@include("../blocks/modules/head/head.html")
 </head>
 <body class="body">
-    <div class="page">
-        <header class="section section--head" style="background-image: url('img/intro-bg.jpg');" id="section-0">
-            <div class="container container--intro">
-                @@include("../blocks/modules/header/header.html")
-                <div class="intro-content">
-                    @@include("../blocks/modules/intro-slider/intro-slider.html")
-                    @@include("../blocks/modules/intro/intro.html")
-                </div>
-            </div>
-        </header>
-        <main class="main">
-            <section class="section section--light section--decor-1 section--padding-bottom-l" id="section-1">
-                <div class="container container--wrap">
-                    <div class="about">
-                        <div class="about__thumb" style="background-image: url('img/img-type-1.png');">
-                            <span class="about__number">
-                                01
-                            </span>
-                        </div>
-                        <div class="about__content">
-                            <p class="about__discript">
-                                Краудсорсинговая платформа
-                            </p>
-                            <h2 class="about__title">
-                                Развитие городских сообществ
-                            </h2>
-                            <div class="about__text">
-                                <p>
-                                    Платформа «100 Городов» направлена на развитие городских сообществ для их активного вовлечения в процесс изменения городов к лучшему. Здесь вы сможете найти сторонников, которые заинтересованы в воплощении в жизнь вашей инициативы по развитию города и тех, кто уже прошел этот путь и реализовал проект в своем городе.
-                                </p>
-                                <p>
-                                    В нашем сообществе более 1000 экспертов и 150000 городских лидеров, которые смогут поделиться идеей для реализации вашей инициативы.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    @@include("../blocks/modules/card-person/card-person.html")
-                    <div class="articles">
-                        <hr class="articles__line">
-                        <p class="articles__tag">
-                            Эксперты по направлению
-                        </p>
-                        <div class="articles__content">
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                        </div>
-                        <div class="articles__toolbar">
-                            <a href="" class="btn">
-                                Подать заявку
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section section--dark section--gradient section--padding-bottom-l section--decor-2" id="section-2">
-                <div class="container container--wrap">
-                    <div class="about">
-                        <div class="about__thumb" style="background-image: url('img/img-type-2.png');">
-                            <span class="about__number">
-                                02
-                            </span>
-                        </div>
-                        <div class="about__content">
-                            <p class="about__discript">
-                                От идеи — до технологии
-                            </p>
-                            <h2 class="about__title">
-                                Поддержка <br> технологических <br>
-                                лидеров
-                            </h2>
-                            <div class="about__text">
-                                <p>
-                                    На регулярной основе АСИ совместно с партнерами проводит целевые отборы технологических проектов. Наша цель - повысить качество взаимодействия крупных компаний и предпринимателей.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    @@include("../blocks/modules/card-person/card-person.html")
-                    <div class="articles">
-                        <hr class="articles__line">
-                        <p class="articles__tag">
-                            Эксперты по направлению
-                        </p>
-                        <div class="articles__content">
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                        </div>
-                        <div class="articles__toolbar">
-                            <a href="" class="btn">
-                                Подать заявку
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section section--light section--decor-3">
-                <div class="container container--wrap" id="section-3">
-                    <div class="about">
-                        <div class="about__thumb" style="background-image: url('img/img-type-3.png');">
-                            <span class="about__number">
-                                03
-                            </span>
-                        </div>
-                        <div class="about__content">
-                            <p class="about__discript">
-                                Краудсорсинговая платформа
-                            </p>
-                            <h2 class="about__title">
-                                Продвижение новых  <br>
-                                подходов <br>
-                                в образовании
-                            </h2>
-                            <div class="about__text">
-                                <p>
-                                    Инициатива «100 лидеров развития новых подходов в образовании» предполагает создание доступной системы навигации и построения индивидуальных маршрутов развития лидеров в сфере образования с целью реализации потенциала каждого человека, уменьшение разрыва между текущей системой подготовки кадров и потребностями рынков будущего, а также текущими запросами рынка труда, создание механизмов выявления барьеров и системных ограничений в сфере образования с целью масштабирования и тиражирования проектов лидеров.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    @@include("../blocks/modules/card-person/card-person.html")
-                    <div class="articles">
-                        <hr class="articles__line">
-                        <p class="articles__tag">
-                            Эксперты по направлению
-                        </p>
-                        <div class="articles__content">
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                        </div>
-                        <div class="articles__toolbar">
-                            <a href="" class="btn">
-                                Подать заявку
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container container--wrap" id="section-4">
-                    <div class="about">
-                        <div class="about__thumb" style="background-image: url('img/img-type-4.png');">
-                            <span class="about__number">
-                                04
-                            </span>
-                        </div>
-                        <div class="about__content">
-                            <p class="about__discript">
-                                От идеи — до технологии
-                            </p>
-                            <h2 class="about__title">
-                                Поддержка социальных <br>
-                                изменений
-                            </h2>
-                            <div class="about__text">
-                                <p>
-                                    Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    @@include("../blocks/modules/card-person/card-person.html")
-                    <div class="articles">
-                        <hr class="articles__line">
-                        <p class="articles__tag">
-                            Эксперты по направлению
-                        </p>
-                        <div class="articles__content">
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                            <div class="articles__item">
-                                @@include("../blocks/modules/item-person/item-person.html")
-                            </div>
-                        </div>
-                        <div class="articles__toolbar">
-                            <a href="" class="btn">
-                                Подать заявку
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section section--dark section--gradient section--decor-4 section--progress">
-                <div class="container">
-                    <div class="title">
-                        <h2 class="title__text">
-                            График рассмотрения проектов
-                        </h2>
-                    </div>
-                    <div class="articles">
-                        <div class="articles__content">
-                            <article class="item-progress">
-                                <time class="item-progress__time">
-                                    до <b>20</b>
-                                </time>
-                                <time class="item-progress__time">
-                                    марта, 2021
-                                </time>
-                                <div class="item-progress__toolbar">
-                                    <span class="item-progress__tag">
-                                        Отбор
-                                    </span>
-                                </div>
-                                <ul class="item-progress__list">
-                                    <li class="item-progress__item">
-                                        Помогаем оформить заявку
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Консультируем по мерам поддержки АСИ
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Разъясняем критерии отбора проектов
-                                    </li>
-                                </ul>
-                            </article>
-                            <article class="item-progress">
-                                <time class="item-progress__time">
-                                    до <b>10</b>
-                                </time>
-                                <time class="item-progress__time">
-                                    апреля, 2021
-                                </time>
-                                <div class="item-progress__toolbar">
-                                    <span class="item-progress__tag">
-                                        Оценка
-                                    </span>
-                                </div>
-                                <ul class="item-progress__list">
-                                    <li class="item-progress__item">
-                                        Запрашиваем дополнительную информацию о проекте
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Оцениваем проекты на соответствие критериям
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Формируем рейтинг проектов на поддержку
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Представляем рекомендации по доработке проектов
-                                    </li>
-                                </ul>
-                            </article>
-                            <article class="item-progress">
-                                <time class="item-progress__time">
-                                    до <b>10</b>
-                                </time>
-                                <time class="item-progress__time">
-                                    июля, 2021
-                                </time>
-                                <div class="item-progress__toolbar">
-                                    <span class="item-progress__tag">
-                                        Экспертиза
-                                    </span>
-                                </div>
-                                <ul class="item-progress__list">
-                                    <li class="item-progress__item">
-                                        Выстраиваем коммуникацию с лидером
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Даем доступ к экспертной сети
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Подбираем инструменты поддержки для проекта
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Разрабатываем дорожные карты сопровождения проектов
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Прокачиваем лидеров к защите проекта перед экспертами
-                                    </li>
-                                </ul>
-                            </article>
-                            <article class="item-progress">
-                                <time class="item-progress__time">
-                                    до <b>10</b>
-                                </time>
-                                <time class="item-progress__time">
-                                    июля, 2022
-                                </time>
-                                <div class="item-progress__toolbar">
-                                    <span class="item-progress__tag">
-                                        Сопровождение
-                                    </span>
-                                </div>
-                                <ul class="item-progress__list">
-                                    <li class="item-progress__item">
-                                        Формируем команду для поддержки проекта
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Помогаем выстроить диалог с органами власти
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Проводим акселерацию проектов
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Помогаем в упаковке проектов
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Помогаем тиражировать проекты
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Продвигаем проекты в информационном поле
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Консультируем по мерам господдержки
-                                    </li>
-                                </ul>
-                            </article>
-                            <article class="item-progress">
-                                <time class="item-progress__time">
-                                    до <b>20</b>
-                                </time>
-                                <time class="item-progress__time">
-                                    июля, 2027
-                                </time>
-                                <div class="item-progress__toolbar">
-                                    <span class="item-progress__tag">
-                                        Мониторинг
-                                    </span>
-                                </div>
-                                <ul class="item-progress__list">
-                                    <li class="item-progress__item">
-                                        Консультируем по мерам господдержки
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Предлагаем подходы для решения возникших проблем
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Приглашаем к участию в проектах и инициативах АСИ
-                                    </li>
-                                    <li class="item-progress__item">
-                                        Предлагаем стать экспертами, наставниками и партнерами
-                                    </li>
-                                </ul>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h2 class="title__text">
-                            Истории успеха
-                        </h2>
-                    </div>
-                    <div class="grid-slider">
-                        <div class="grid-slider__container">
-                            <div class="grid-slider__toolbar">
-                                <button class="grid-slider__nav-btn grid-slider__nav-btn--left">
-                                    <svg class="grid-slider__nav-icon">
-                                        <use xlink:href="/img/sprites/sprite.svg#icon-arrow-left"></use>
-                                    </svg>
-                                </button>
-                                <button class="grid-slider__nav-btn grid-slider__nav-btn--right">
-                                    <svg class="grid-slider__nav-icon">
-                                        <use xlink:href="/img/sprites/sprite.svg#icon-arrow-right"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="swiper-wrapper grid-slider__wrapper">
-                                <div class="swiper-slide grid-slider__slide">
-                                    <div class="grid">
-                                        <div class="item-grid item-grid--1">
-                                            <picture class="item-grid__picture">
-                                                <img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
-                                            </picture>
-                                            <div class="item-grid__content">
-                                                <h4 class="item-grid__title">
-                                                    Прошло заседание экспертов
-                                                </h4>
-                                                <div class="item-grid__text">
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-grid item-grid--2">
-                                            <picture class="item-grid__picture">
-                                                <img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
-                                            </picture>
-                                            <div class="item-grid__content">
-                                                <h4 class="item-grid__title">
-                                                    Прошло заседание экспертов
-                                                </h4>
-                                                <div class="item-grid__text">
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-grid item-grid--3">
-                                            <picture class="item-grid__picture">
-                                                <img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
-                                            </picture>
-                                            <div class="item-grid__content">
-                                                <h4 class="item-grid__title">
-                                                    Прошло заседание экспертов
-                                                </h4>
-                                                <div class="item-grid__text">
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide grid-slider__slide">
-                                    <div class="grid">
-                                        <div class="item-grid item-grid--1">
-                                            <picture class="item-grid__picture">
-                                                <img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
-                                            </picture>
-                                            <div class="item-grid__content">
-                                                <h4 class="item-grid__title">
-                                                    Прошло заседание экспертов
-                                                </h4>
-                                                <div class="item-grid__text">
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-grid item-grid--2">
-                                            <picture class="item-grid__picture">
-                                                <img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
-                                            </picture>
-                                            <div class="item-grid__content">
-                                                <h4 class="item-grid__title">
-                                                    Прошло заседание экспертов
-                                                </h4>
-                                                <div class="item-grid__text">
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-grid item-grid--3">
-                                            <picture class="item-grid__picture">
-                                                <img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
-                                            </picture>
-                                            <div class="item-grid__content">
-                                                <h4 class="item-grid__title">
-                                                    Прошло заседание экспертов
-                                                </h4>
-                                                <div class="item-grid__text">
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide grid-slider__slide">
-                                    <div class="grid">
-                                        <div class="item-grid item-grid--1">
-                                            <picture class="item-grid__picture">
-                                                <img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
-                                            </picture>
-                                            <div class="item-grid__content">
-                                                <h4 class="item-grid__title">
-                                                    Прошло заседание экспертов
-                                                </h4>
-                                                <div class="item-grid__text">
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-grid item-grid--2">
-                                            <picture class="item-grid__picture">
-                                                <img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
-                                            </picture>
-                                            <div class="item-grid__content">
-                                                <h4 class="item-grid__title">
-                                                    Прошло заседание экспертов
-                                                </h4>
-                                                <div class="item-grid__text">
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-grid item-grid--3">
-                                            <picture class="item-grid__picture">
-                                                <img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
-                                            </picture>
-                                            <div class="item-grid__content">
-                                                <h4 class="item-grid__title">
-                                                    Прошло заседание экспертов
-                                                </h4>
-                                                <div class="item-grid__text">
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                    <p>
-                                                        Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section section--light section--bottom section--decor-5">
-                <div class="container">
-                    <div class="title" id="section-5">
-                        <h2 class="title__text">
-                            Новости
-                        </h2>
-                    </div>
-                    <div class="articles">
-                        <div class="articles__content articles__content--between">
-                            @@include("../blocks/modules/item-article/item-article.html")
-                            @@include("../blocks/modules/item-article/item-article.html")
-                            @@include("../blocks/modules/item-article/item-article.html")
-                        </div>
-                    </div>
-                    @@include("../blocks/modules/link-top/link-top.html")
-                </div>
-            </section>
-        </main>
-        <footer class="section section--footer">
-            <div class="container">
-                @@include("../blocks/modules/footer/footer.html")
-            </div>
-        </footer>
-    </div>
-    @@include("../blocks/modules/mob-menu/mob-menu.html")
-    <script src="js/main.js"></script>
-    <script src="js/vendor.js"></script>
+	<div class="page">
+		<header class="section section--head" style="background-image: url('img/intro-bg.jpg');" id="section-0">
+			<div class="container container--intro">
+				@@include("../blocks/modules/header/header.html")
+				<div class="intro-content">
+					@@include("../blocks/modules/intro-slider/intro-slider.html")
+					@@include("../blocks/modules/intro/intro.html")
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section section--light section--decor-1 section--padding-bottom-l" id="section-1">
+				<div class="container container--wrap">
+					<div class="about">
+						<div class="about__thumb" style="background-image: url('img/img-type-1.png');">
+							<span class="about__number">
+								01
+							</span>
+						</div>
+						<div class="about__content">
+							<p class="about__discript">
+								Краудсорсинговая платформа
+							</p>
+							<h2 class="about__title">
+								Развитие городских сообществ
+							</h2>
+							<div class="about__text">
+								<p>
+									Платформа «100 Городов» направлена на развитие городских сообществ для их активного вовлечения в процесс изменения городов к лучшему. Здесь вы сможете найти сторонников, которые заинтересованы в воплощении в жизнь вашей инициативы по развитию города и тех, кто уже прошел этот путь и реализовал проект в своем городе.
+								</p>
+								<p>
+									В нашем сообществе более 1000 экспертов и 150000 городских лидеров, которые смогут поделиться идеей для реализации вашей инициативы.
+								</p>
+							</div>
+						</div>
+					</div>
+					@@include("../blocks/modules/card-person/card-person.html")
+					<div class="articles">
+						<hr class="articles__line">
+						<p class="articles__tag">
+							Эксперты по направлению
+						</p>
+						<div class="articles__content">
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+						</div>
+						<div class="articles__toolbar">
+							<a href="" class="btn">
+								Подать заявку
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark section--gradient section--padding-bottom-l section--decor-2" id="section-2">
+				<div class="container container--wrap">
+					<div class="about">
+						<div class="about__thumb" style="background-image: url('img/img-type-2.png');">
+							<span class="about__number">
+								02
+							</span>
+						</div>
+						<div class="about__content">
+							<p class="about__discript">
+								От идеи — до технологии
+							</p>
+							<h2 class="about__title">
+								Поддержка <br> технологических <br>
+								лидеров
+							</h2>
+							<div class="about__text">
+								<p>
+									На регулярной основе АСИ совместно с партнерами проводит целевые отборы технологических проектов. Наша цель - повысить качество взаимодействия крупных компаний и предпринимателей.
+								</p>
+							</div>
+						</div>
+					</div>
+					@@include("../blocks/modules/card-person/card-person.html")
+					<div class="articles">
+						<hr class="articles__line">
+						<p class="articles__tag">
+							Эксперты по направлению
+						</p>
+						<div class="articles__content">
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+						</div>
+						<div class="articles__toolbar">
+							<a href="" class="btn">
+								Подать заявку
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--light section--decor-3">
+				<div class="container container--wrap" id="section-3">
+					<div class="about">
+						<div class="about__thumb" style="background-image: url('img/img-type-3.png');">
+							<span class="about__number">
+								03
+							</span>
+						</div>
+						<div class="about__content">
+							<p class="about__discript">
+								Краудсорсинговая платформа
+							</p>
+							<h2 class="about__title">
+								Продвижение новых  <br>
+								подходов <br>
+								в образовании
+							</h2>
+							<div class="about__text">
+								<p>
+									Инициатива «100 лидеров развития новых подходов в образовании» предполагает создание доступной системы навигации и построения индивидуальных маршрутов развития лидеров в сфере образования с целью реализации потенциала каждого человека, уменьшение разрыва между текущей системой подготовки кадров и потребностями рынков будущего, а также текущими запросами рынка труда, создание механизмов выявления барьеров и системных ограничений в сфере образования с целью масштабирования и тиражирования проектов лидеров.
+								</p>
+							</div>
+						</div>
+					</div>
+					@@include("../blocks/modules/card-person/card-person.html")
+					<div class="articles">
+						<hr class="articles__line">
+						<p class="articles__tag">
+							Эксперты по направлению
+						</p>
+						<div class="articles__content">
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+						</div>
+						<div class="articles__toolbar">
+							<a href="" class="btn">
+								Подать заявку
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="container container--wrap" id="section-4">
+					<div class="about">
+						<div class="about__thumb" style="background-image: url('img/img-type-4.png');">
+							<span class="about__number">
+								04
+							</span>
+						</div>
+						<div class="about__content">
+							<p class="about__discript">
+								От идеи — до технологии
+							</p>
+							<h2 class="about__title">
+								Поддержка социальных <br>
+								изменений
+							</h2>
+							<div class="about__text">
+								<p>
+									Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+								</p>
+							</div>
+						</div>
+					</div>
+					@@include("../blocks/modules/card-person/card-person.html")
+					<div class="articles">
+						<hr class="articles__line">
+						<p class="articles__tag">
+							Эксперты по направлению
+						</p>
+						<div class="articles__content">
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+							<div class="articles__item">
+								@@include("../blocks/modules/item-person/item-person.html")
+							</div>
+						</div>
+						<div class="articles__toolbar">
+							<a href="" class="btn">
+								Подать заявку
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark section--gradient section--decor-4 section--progress">
+				<div class="container">
+					<div class="title">
+						<h2 class="title__text">
+							График рассмотрения проектов
+						</h2>
+					</div>
+					<div class="articles">
+						<div class="articles__content">
+							<article class="item-progress">
+								<time class="item-progress__time">
+									до <b>20</b>
+								</time>
+								<time class="item-progress__time">
+									марта, 2021
+								</time>
+								<div class="item-progress__toolbar">
+									<span class="item-progress__tag">
+										Отбор
+									</span>
+								</div>
+								<ul class="item-progress__list">
+									<li class="item-progress__item">
+										Помогаем оформить заявку
+									</li>
+									<li class="item-progress__item">
+										Консультируем по мерам поддержки АСИ
+									</li>
+									<li class="item-progress__item">
+										Разъясняем критерии отбора проектов
+									</li>
+								</ul>
+							</article>
+							<article class="item-progress">
+								<time class="item-progress__time">
+									до <b>10</b>
+								</time>
+								<time class="item-progress__time">
+									апреля, 2021
+								</time>
+								<div class="item-progress__toolbar">
+									<span class="item-progress__tag">
+										Оценка
+									</span>
+								</div>
+								<ul class="item-progress__list">
+									<li class="item-progress__item">
+										Запрашиваем дополнительную информацию о проекте
+									</li>
+									<li class="item-progress__item">
+										Оцениваем проекты на соответствие критериям
+									</li>
+									<li class="item-progress__item">
+										Формируем рейтинг проектов на поддержку
+									</li>
+									<li class="item-progress__item">
+										Представляем рекомендации по доработке проектов
+									</li>
+								</ul>
+							</article>
+							<article class="item-progress">
+								<time class="item-progress__time">
+									до <b>10</b>
+								</time>
+								<time class="item-progress__time">
+									июля, 2021
+								</time>
+								<div class="item-progress__toolbar">
+									<span class="item-progress__tag">
+										Экспертиза
+									</span>
+								</div>
+								<ul class="item-progress__list">
+									<li class="item-progress__item">
+										Выстраиваем коммуникацию с лидером
+									</li>
+									<li class="item-progress__item">
+										Даем доступ к экспертной сети
+									</li>
+									<li class="item-progress__item">
+										Подбираем инструменты поддержки для проекта
+									</li>
+									<li class="item-progress__item">
+										Разрабатываем дорожные карты сопровождения проектов
+									</li>
+									<li class="item-progress__item">
+										Прокачиваем лидеров к защите проекта перед экспертами
+									</li>
+								</ul>
+							</article>
+							<article class="item-progress">
+								<time class="item-progress__time">
+									до <b>10</b>
+								</time>
+								<time class="item-progress__time">
+									июля, 2022
+								</time>
+								<div class="item-progress__toolbar">
+									<span class="item-progress__tag">
+										Сопровождение
+									</span>
+								</div>
+								<ul class="item-progress__list">
+									<li class="item-progress__item">
+										Формируем команду для поддержки проекта
+									</li>
+									<li class="item-progress__item">
+										Помогаем выстроить диалог с органами власти
+									</li>
+									<li class="item-progress__item">
+										Проводим акселерацию проектов
+									</li>
+									<li class="item-progress__item">
+										Помогаем в упаковке проектов
+									</li>
+									<li class="item-progress__item">
+										Помогаем тиражировать проекты
+									</li>
+									<li class="item-progress__item">
+										Продвигаем проекты в информационном поле
+									</li>
+									<li class="item-progress__item">
+										Консультируем по мерам господдержки
+									</li>
+								</ul>
+							</article>
+							<article class="item-progress">
+								<time class="item-progress__time">
+									до <b>20</b>
+								</time>
+								<time class="item-progress__time">
+									июля, 2027
+								</time>
+								<div class="item-progress__toolbar">
+									<span class="item-progress__tag">
+										Мониторинг
+									</span>
+								</div>
+								<ul class="item-progress__list">
+									<li class="item-progress__item">
+										Консультируем по мерам господдержки
+									</li>
+									<li class="item-progress__item">
+										Предлагаем подходы для решения возникших проблем
+									</li>
+									<li class="item-progress__item">
+										Приглашаем к участию в проектах и инициативах АСИ
+									</li>
+									<li class="item-progress__item">
+										Предлагаем стать экспертами, наставниками и партнерами
+									</li>
+								</ul>
+							</article>
+						</div>
+					</div>
+					<div class="title">
+						<h2 class="title__text">
+							Истории успеха
+						</h2>
+					</div>
+					<div class="grid-slider">
+						<div class="grid-slider__container">
+							<div class="grid-slider__toolbar">
+								<button class="grid-slider__nav-btn grid-slider__nav-btn--left">
+									<svg class="grid-slider__nav-icon">
+										<use xlink:href="/img/sprites/sprite.svg#icon-arrow-left"></use>
+									</svg>
+								</button>
+								<button class="grid-slider__nav-btn grid-slider__nav-btn--right">
+									<svg class="grid-slider__nav-icon">
+										<use xlink:href="/img/sprites/sprite.svg#icon-arrow-right"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="swiper-wrapper grid-slider__wrapper">
+								<div class="swiper-slide grid-slider__slide">
+									<div class="grid">
+										<div class="item-grid item-grid--1">
+											<picture class="item-grid__picture">
+												<img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
+											</picture>
+											<div class="item-grid__content">
+												<h4 class="item-grid__title">
+													Прошло заседание экспертов
+												</h4>
+												<div class="item-grid__text">
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item-grid item-grid--2">
+											<picture class="item-grid__picture">
+												<img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
+											</picture>
+											<div class="item-grid__content">
+												<h4 class="item-grid__title">
+													Прошло заседание экспертов
+												</h4>
+												<div class="item-grid__text">
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item-grid item-grid--3">
+											<picture class="item-grid__picture">
+												<img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
+											</picture>
+											<div class="item-grid__content">
+												<h4 class="item-grid__title">
+													Прошло заседание экспертов
+												</h4>
+												<div class="item-grid__text">
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide grid-slider__slide">
+									<div class="grid">
+										<div class="item-grid item-grid--1">
+											<picture class="item-grid__picture">
+												<img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
+											</picture>
+											<div class="item-grid__content">
+												<h4 class="item-grid__title">
+													Прошло заседание экспертов
+												</h4>
+												<div class="item-grid__text">
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item-grid item-grid--2">
+											<picture class="item-grid__picture">
+												<img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
+											</picture>
+											<div class="item-grid__content">
+												<h4 class="item-grid__title">
+													Прошло заседание экспертов
+												</h4>
+												<div class="item-grid__text">
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item-grid item-grid--3">
+											<picture class="item-grid__picture">
+												<img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
+											</picture>
+											<div class="item-grid__content">
+												<h4 class="item-grid__title">
+													Прошло заседание экспертов
+												</h4>
+												<div class="item-grid__text">
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide grid-slider__slide">
+									<div class="grid">
+										<div class="item-grid item-grid--1">
+											<picture class="item-grid__picture">
+												<img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
+											</picture>
+											<div class="item-grid__content">
+												<h4 class="item-grid__title">
+													Прошло заседание экспертов
+												</h4>
+												<div class="item-grid__text">
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item-grid item-grid--2">
+											<picture class="item-grid__picture">
+												<img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
+											</picture>
+											<div class="item-grid__content">
+												<h4 class="item-grid__title">
+													Прошло заседание экспертов
+												</h4>
+												<div class="item-grid__text">
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item-grid item-grid--3">
+											<picture class="item-grid__picture">
+												<img src="https://via.placeholder.com/1000x1000" alt="" class="item-grid__img">
+											</picture>
+											<div class="item-grid__content">
+												<h4 class="item-grid__title">
+													Прошло заседание экспертов
+												</h4>
+												<div class="item-grid__text">
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+													<p>
+														Фонд поддержки социальных проектов и Фонд президентских грантов поддержали за 2017—2018 годы 6786 проектов на сумму более 14 млрд. руб.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--light section--news section--decor-5">
+				<div class="container">
+					<a href="news.html" class="title" id="section-5">
+						<h2 class="title__text">
+							Новости
+						</h2>
+					</a>
+					<div class="articles articles--news">
+						<div class="articles__content articles__content--between">
+							@@include("../blocks/modules/item-article/item-article.html")
+							@@include("../blocks/modules/item-article/item-article.html")
+							@@include("../blocks/modules/item-article/item-article.html")
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--bottom">
+				<div class="container">
+					<div class="columns columns--contacts">
+						<div class="columns__column columns__column--5">
+							<div class="title" id="section-6">
+								<h2 class="title__text">
+									Контакты
+								</h2>
+							</div>
+							<div class="editor editor--contacts">
+								<p>
+									<strong>Адрес:</strong> 236000, Россия, <br>г. Калининград, ул. Озерова, 25, <br>офисы 406-408
+								</p>
+								<p>
+									<strong>Телефон:</strong> <a href="tel:+7900 5849232">8 900 584 92 32</a>
+								</p>
+								<p>
+									<strong>Email:</strong> <a href="mailto:asi@asi.ru">asi@asi.ru</a>
+								</p>
+							</div>
+							<a href="#modal-form" data-fancybox class="btn">
+								Задать вопрос
+							</a>
+						</div>
+						<div class="columns__column columns__column--7">
+
+						</div>
+					</div>
+					@@include("../blocks/modules/link-top/link-top.html")
+				</div>
+			</section>
+		</main>
+		<footer class="section section--footer">
+			<div class="container">
+				@@include("../blocks/modules/footer/footer.html")
+			</div>
+		</footer>
+	</div>
+	@@include("../blocks/modules/mob-menu/mob-menu.html")
+	@@include("../blocks/modules/modal/modal.html")
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
 </body>
 </html>

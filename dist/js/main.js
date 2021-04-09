@@ -266,6 +266,24 @@ var slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.intro-slider__
 
 /***/ }),
 
+/***/ "./src/blocks/modules/modal/modal.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/modules/modal/modal.js ***!
+  \*******************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fancyapps_fancybox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fancyapps/fancybox */ "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
+/* harmony import */ var _fancyapps_fancybox__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fancyapps_fancybox__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+/***/ }),
+
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -283,6 +301,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_grid_slider_grid_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/grid-slider/grid-slider */ "./src/blocks/modules/grid-slider/grid-slider.js");
 /* harmony import */ var _modules_mob_menu_mob_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/mob-menu/mob-menu */ "./src/blocks/modules/mob-menu/mob-menu.js");
 /* harmony import */ var _modules_mob_menu_mob_menu__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_mob_menu_mob_menu__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/modal/modal */ "./src/blocks/modules/modal/modal.js");
+
 
 
 

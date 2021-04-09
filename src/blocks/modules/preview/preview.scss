@@ -1,0 +1,36 @@
+.preview {
+	margin-bottom: rem(60);
+	&__thumb {
+		display: block;
+		margin-bottom: rem(22);
+		@include r(1200) {
+			margin-bottom: rem(10);
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__time {
+		position: relative;
+		color: $blue;
+		padding-left: rem(30);
+		@include r(1200) {
+			padding-left: 0;
+		}
+		&:before {
+			content: "";
+			width: rem(6);
+			height: rem(98);
+			display: block;
+			position: absolute;
+			left: rem(10);
+			bottom: 0;
+			background-color: $blue;
+			@include r(1200) {
+				display: none;
+			}
+		}
+	}
+}

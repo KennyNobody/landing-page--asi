@@ -7,6 +7,10 @@
 		background-size: cover;
 		color: $light;
 	}
+	&--breadcrumbs {
+		padding-top: rem(48);
+		padding-bottom: rem(48);
+	}
 	&--footer {
 		background-color: $dark;
 		color: $light;
@@ -76,13 +80,29 @@
 		background-image: url('../img/decor-circle-1.svg');
 		background-repeat: no-repeat;
 		background-size: 650px 650px;
-		background-position: left calc((100vw - 1700px)/2) bottom -100px;
+		background-position: left calc((100vw - 1700px)/2) bottom 0px;
 		@include r(1200) {
 			right: 100px;
 		}
 	}
-	&--bottom {
+	&--decor-news {
+		background-image: url('../img/decor-circle-1.svg');
+		background-repeat: no-repeat;
+		background-size: 650px 650px;
+		background-position: left calc((100vw - 1700px)/2) top 50px;
+		@include r(1200) {
+			right: 100px;
+		}
+	}
+	&--single {
+		margin-bottom: rem(40);
+	}
+	&--news {
 		padding-top: rem(364);
+		padding-bottom: rem(55);
+	}
+	&--bottom {
+		// padding-top: rem(364);
 		padding-bottom: rem(55);
 	}
 	&--progress {
