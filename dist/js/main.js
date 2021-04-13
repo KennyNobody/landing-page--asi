@@ -155,6 +155,44 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/modules/agreement/agreement.js":
+/*!***************************************************!*\
+  !*** ./src/blocks/modules/agreement/agreement.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.addEventListener('DOMContentLoaded', function () {
+  var radio = document.querySelectorAll('.agreement');
+
+  var _loop = function _loop(i) {
+    var input = radio[i].querySelector('input');
+    toggleDisabled(input, input.checked);
+    input.addEventListener('change', function () {
+      toggleDisabled(input, input.checked);
+    });
+  };
+
+  for (var i = 0; i < radio.length; i++) {
+    _loop(i);
+  }
+
+  function toggleDisabled(item, state) {
+    var text = item.getAttribute('data-for');
+    var button = document.querySelector('#' + text);
+
+    if (button && state) {
+      button.classList.remove("disabled");
+    } else if (button && state == false) {
+      button.classList.add("disabled");
+    } else {
+      return false;
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./src/blocks/modules/footer/footer.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/footer/footer.js ***!
@@ -301,7 +339,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_grid_slider_grid_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/grid-slider/grid-slider */ "./src/blocks/modules/grid-slider/grid-slider.js");
 /* harmony import */ var _modules_mob_menu_mob_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/mob-menu/mob-menu */ "./src/blocks/modules/mob-menu/mob-menu.js");
 /* harmony import */ var _modules_mob_menu_mob_menu__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_mob_menu_mob_menu__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/modal/modal */ "./src/blocks/modules/modal/modal.js");
+/* harmony import */ var _modules_agreement_agreement__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/agreement/agreement */ "./src/blocks/modules/agreement/agreement.js");
+/* harmony import */ var _modules_agreement_agreement__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_agreement_agreement__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/modal/modal */ "./src/blocks/modules/modal/modal.js");
+
 
 
 

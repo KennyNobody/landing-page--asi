@@ -8,7 +8,7 @@
 		overflow: visible;
 	}
 	&__wrapper {
-
+		margin-bottom: rem(60);
 	}
 	&__toolbar {
 		display: flex;
@@ -49,5 +49,8 @@
 			opacity: 1;
 			visibility: visible;
 		}
+	}
+	&__toolbar-bottom {
+		text-align: center;
 	}
 }

@@ -5,10 +5,15 @@
 		border-radius: rem(350);
 		display: block;
 		margin-bottom: rem(16);
-		max-width: rem(280);
-		max-height: rem(280);
+		width: rem(218);
+		height: rem(218);
 		margin-left: auto;
 		margin-right: auto;
+		@include r(1800) {
+			max-width: 100%;
+			// width: rem(240);
+			// height: rem(240);
+		}
 	}
 	&__img {
 		height: 100%;

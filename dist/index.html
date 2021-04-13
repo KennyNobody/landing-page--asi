@@ -1501,7 +1501,18 @@
 	<label class="input">
 		<textarea class="input__textarea" placeholder="Ваше сообщение"></textarea>
 	</label>
-	<button class="btn">
+	<label class="agreement">
+		<input type="checkbox" class="agreement__field" data-for="button-form">
+		<div class="agreement__icon">
+			<svg class="agreement__marker">
+				<use xlink:href="/img/sprites/sprite.svg#icon-check"></use>
+			</svg>
+		</div>
+		<p class="agreement__text">
+			Я соглашаюсь с <a href="">Правилами использования сайта и на обработку своих персональных данных</a>
+		</p>
+	</label>
+	<button class="btn" id="button-form">
 		Отправить
 	</button>
 </section>
